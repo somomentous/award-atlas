@@ -8,6 +8,7 @@
   <title>Award Atlas — Find your next award flight</title>
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <script type="module" src="download-stats.mjs"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -32,8 +33,14 @@
           </a>
           <a class="text-link" href="#install">Installation guide</a>
         </div>
-        <p class="download-meta">Free · v0.3.3 · Desktop Chrome on Mac &amp; Windows</p>
-        <p class="store-note">Install from the ZIP today. Chrome Web Store submission is pending review.</p>
+        <p class="download-meta">Free · v0.4.0 · Desktop Chrome on Mac &amp; Windows</p>
+        <p class="store-note">Install manually from GitHub Releases. Includes Saved Searches and offline airport lookup.</p>
+        <section id="download-stats" class="download-stats" aria-label="Download statistics" aria-busy="true">
+          <dl><div><dt>Total downloads</dt><dd id="total-downloads">—</dd></div><div><dt id="latest-download-label">Latest version downloads</dt><dd id="latest-downloads">—</dd></div></dl>
+          <p id="download-stats-status" role="status">Loading GitHub download counts…</p>
+          <a href="https://github.com/somomentous/award-atlas/releases">View releases</a>
+          <noscript><p>Enable JavaScript to display GitHub download counts.</p></noscript>
+        </section>
         <dl class="quick-facts">
           <div><dt>7 / 14 / 30</dt><dd>day search ranges</dd></div>
           <div><dt>A whole month</dt><dd>for flexible travel plans</dd></div>
@@ -41,16 +48,16 @@
         </dl>
       </div>
       <figure class="product-preview">
-        <div class="preview-topline"><span>THE LITTLE PANEL WITH BIG PLANS</span><span>v0.3.3</span></div>
-        <img class="panel-image" src="assets/panel.jpg" width="420" height="768" alt="Award Atlas’s compact panel with JFK to HKG, date range and month modes, cabin and traveler choices, and Search award seats.">
-        <figcaption>Actual extension panel. Search directly on your Cathay tab.</figcaption>
+        <div class="preview-topline"><span>THE LITTLE PANEL WITH BIG PLANS</span><span>v0.4.0</span></div>
+        <img class="panel-image" src="assets/panel.jpg" width="430" height="940" alt="Award Atlas’s compact panel with airport autocomplete, Saved Searches, date range and month modes, cabin and traveler choices, and Search award seats.">
+        <figcaption>Extension panel in a local preview. Search directly on your Cathay tab.</figcaption>
       </figure>
     </section>
 
     <section class="benefits wrap" aria-label="Features">
       <article><span class="feature-number">01</span><h2>A little more flexibility.</h2><p>Search 7, 14, or 30 days, or choose a month in the current or following year. Dates stay within the supported booking window.</p></article>
-      <article><span class="feature-number">02</span><h2>Stay on Cathay.</h2><p>Sign in to your own Cathay account, open the panel, and search. Filter results by departure date or nonstop flights.</p></article>
-      <article><span class="feature-number">03</span><h2>Keep it in your browser.</h2><p>Search requests go directly to Cathay. Results stay in your browser session, with no extension analytics or search backend.</p></article>
+      <article><span class="feature-number">02</span><h2>Stay on Cathay.</h2><p>Find airports by city, country, name or code. Save your route and filters under a name, then reopen, edit or rerun them later.</p></article>
+      <article><span class="feature-number">03</span><h2>Keep it in your browser.</h2><p>Search requests go directly to Cathay. Saved searches and results stay locally in your browser, with no extension analytics or search backend. GitHub supplies public update metadata.</p></article>
     </section>
 
     <section class="install-section" id="install" aria-labelledby="install-title">
@@ -72,17 +79,17 @@
     <section class="wrap essentials" aria-labelledby="essentials-title">
       <div><p class="eyebrow">GOOD TO KNOW</p><h2 id="essentials-title">Before your first search.</h2></div>
       <div class="faq">
-        <details open><summary>How do I update the ZIP version?</summary><p>ZIP installations update manually. Download the newest ZIP from this page, extract it, and replace the files in the folder Chrome originally loaded. Finish or stop any search, then click <strong>Reload inside the Award Atlas card</strong> at <code>chrome://extensions</code>. Refresh your Cathay tab. Reloading alone does not download new files; updating clears current results.</p><p>Once available, Chrome Web Store installations will receive updates through Chrome.</p></details>
+        <details open><summary>How do I update the ZIP version?</summary><p>ZIP installations update manually. Download the newest ZIP from this page, extract it, and replace the files in the folder Chrome originally loaded. Finish or stop any search, then click <strong>Reload inside the Award Atlas card</strong> at <code>chrome://extensions</code>. Refresh your Cathay tab. Reloading alone does not download new files. Keep the same installed folder and extension identity to preserve saved searches, preferences and results from v0.4.0 onward. Earlier v0.3.x session results cannot survive the first reload. Settings alerts you when GitHub has an update; Update Now opens its release page.</p></details>
         <details><summary>What if a search pauses or finds no seats?</summary><p>Keep the Cathay booking tab open and complete any sign-in or verification prompts on Cathay. Follow the panel’s waiting instructions, then choose <strong>Continue remaining dates</strong> when available. Checked dates are kept; unchecked dates remain unknown. Cathay’s website changes or request limits can interrupt searches.</p></details>
         <details><summary>Does this book flights or access my password?</summary><p>No. Sign in directly on Cathay; Award Atlas does not ask for or read your password and has no permission to read Chrome’s cookie store. It uses your existing Cathay session to search. Confirm availability, miles, taxes, and any booking directly with Cathay.</p></details>
-        <details><summary>Where can I get help?</summary><p>Email <a href="mailto:ntia78@gmail.com">ntia78@gmail.com</a> with the extension version and error message. Please leave out passwords, cookies, session identifiers, and member or payment details. You can also read the <a href="https://award-atlas-info.nate-cb0.workers.dev/support">support guide</a>.</p></details>
+        <details><summary>Where can I get help?</summary><p>Open a <a href="https://github.com/somomentous/award-atlas/issues">GitHub issue</a> with the extension version and error message. Please leave out passwords, cookies, session identifiers, and member or payment details.</p></details>
       </div>
     </section>
   </main>
 
   <footer class="site-footer wrap">
     <div><a class="brand" href="./"><img src="assets/mark.svg" width="30" height="30" alt=""><span>Award Atlas</span></a><p>Non-Affiliated Tool · Always confirm miles &amp; taxes on Cathay Pacific</p><p>Not affiliated with or endorsed by Cathay Pacific or Asia Miles.</p></div>
-    <nav aria-label="Footer navigation"><a href="privacy.html">Privacy</a><a href="mailto:ntia78@gmail.com">Contact</a><a href="https://github.com/somomentous/award-atlas">GitHub</a></nav>
+    <nav aria-label="Footer navigation"><a href="privacy.html">Privacy</a><a href="https://github.com/somomentous/award-atlas/issues">Help</a><a href="https://github.com/somomentous/award-atlas">GitHub</a></nav>
   </footer>
 </body>
 </html>

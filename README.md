@@ -1,40 +1,31 @@
 # Award Atlas
 
-A free Chrome extension that searches Cathay Pacific award-seat availability in a compact panel on Cathay’s website.
+A free Chrome extension for searching Cathay Pacific award seats in a compact panel on Cathay’s website.
 
-**[Visit the website](https://somomentous.github.io/award-atlas/)** · **[Download Award Atlas ZIP](https://github.com/somomentous/award-atlas/releases/latest/download/Award-Atlas.zip)** · [Release notes](https://github.com/somomentous/award-atlas/releases)
+[Website](https://somomentous.github.io/award-atlas/) · [Download ZIP](https://github.com/somomentous/award-atlas/releases/latest/download/Award-Atlas.zip) · [Release notes](https://github.com/somomentous/award-atlas/releases)
 
-Current version: **0.3.3**. The Chrome Web Store submission is pending review. The ZIP is available now for manual installation.
+## Install
 
-## Install on Mac or Windows
+Download the release ZIP asset, not GitHub’s Source code archive. Extract it (double-click on Mac; Extract All on Windows), keep the `award-atlas-extension` folder in a permanent location, then open `chrome://extensions` in desktop Chrome 120+. Enable Developer mode, click Load unpacked, and select the folder containing `manifest.json`. Pin Award Atlas, sign in directly on Cathay, refresh that tab, and click the extension icon.
 
-1. Download the ZIP above. On Mac, double-click it. On Windows, right-click and choose **Extract All**.
-2. Move the extracted `award-atlas-extension` folder somewhere permanent, such as Documents.
-3. In desktop Chrome (120 or later), open `chrome://extensions` and turn on **Developer mode**.
-4. Click **Load unpacked** and select the inner `award-atlas-extension` folder containing `manifest.json`. Select the folder, not the ZIP.
-5. Pin Award Atlas from Chrome’s puzzle-piece menu. Sign in directly on [Cathay Pacific](https://www.cathaypacific.com/), refresh the tab, then click the extension icon.
-6. Choose your route, cabin, adult traveler count, and a **7-, 14-, or 30-day range** or **calendar month**. Click **Search award seats** and keep the Cathay booking tab open.
+Choose airports with city/country/name/IATA suggestions, then cabin, adults, and 7/14/30 days or a month. Keep the Cathay tab open. Save Search stores named configurations for later use; Saved Searches lets you run, rename, edit or delete them.
 
-The ZIP includes a full `README.txt`. Keep the installed folder in place.
+## Update
 
-## Updates
+Settings > Check for Updates checks GitHub releases. Update Now opens the release page; it does not install a ZIP automatically. Stop your search, download/extract the latest ZIP, replace files in the **same installed folder**, click Reload on Award Atlas’s card, and refresh Cathay. Do not remove the extension or load a new folder.
 
-ZIP installations do not update automatically. Download the newest ZIP, extract it, replace the files in the existing extension folder, and click **Reload inside the Award Atlas card** at `chrome://extensions`. Then refresh your Cathay tab. Finish or stop any search first. Updating clears session results.
+Local preferences, saved searches and normalized progress persist from 0.4.0 onward if the extension identity stays the same. Earlier 0.3.x results used session storage and cannot survive Chrome clearing them on the first upgrade. Managed-device installation requires administrator policies; this ZIP does not configure that deployment.
 
-Reloading alone does not download new files. Once available, Chrome Web Store installations will receive updates through Chrome.
+## Privacy and help
 
-## Privacy and support
+Searches go directly to Cathay; local airport lookup works offline. GitHub receives public release/policy metadata requests, not Cathay account/search data. The extension uses no analytics or developer-operated search backend. [Privacy](https://somomentous.github.io/award-atlas/privacy.html) · [GitHub issues](https://github.com/somomentous/award-atlas/issues).
 
-Search requests go directly from your browser to Cathay. Search progress and normalized results stay in browser session storage. No extension analytics or developer-operated search backend is used. Sign in directly on Cathay; the extension does not ask for your password or book flights.
-
-- [Privacy policy](https://somomentous.github.io/award-atlas/privacy.html)
-- [Support guide](https://award-atlas-info.nate-cb0.workers.dev/support)
-- Email: [ntia78@gmail.com](mailto:ntia78@gmail.com)
-
-Cathay website changes, session expiry, and request limits can interrupt searches. Unchecked dates are unknown. Always confirm availability, miles, and taxes directly with Cathay Pacific.
+Cathay website changes, session expiry and limits can interrupt searches. Unchecked dates are unknown. An owner minimum-version policy can require an update without deleting your local data. ZIP installation/updates remain manual.
 
 **Non-Affiliated Tool · Always confirm miles & taxes on Cathay Pacific**
 
-Award Atlas is not affiliated with or endorsed by Cathay Pacific or Asia Miles. Distributed under the [MIT License](LICENSE).
+Not affiliated with Cathay Pacific or Asia Miles. [MIT License](LICENSE). This repository hosts the public website, JSON version policy and release assets.
 
-This repository hosts the public webpage and downloadable releases.
+## Download statistics
+
+The website displays GitHub’s aggregate release-asset download counts: all Award Atlas ZIPs across releases, and the latest version’s ZIPs. This includes downloads from any link and repeat downloads; it does not measure unique users, successful installs, website visitors or button clicks. Counts can lag and depend on GitHub API availability/rate limits. No analytics account, cookies, credentials or paid service is needed.
