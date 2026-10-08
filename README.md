@@ -10,7 +10,7 @@ Download the release ZIP asset, not GitHub’s Source code archive. Extract it (
 
 Choose airports with city/country/name/IATA suggestions, then cabin, adults, and 1/7/14/30 days or a month for a single route. Select up to two airports per field to compare routes over 1 or 7 days (at most 28 route/date checks). Keep the Cathay tab open. Save Search stores named configurations for later use; Saved Searches lets you run, rename, edit or delete them.
 
-Version 0.5.3 includes Oneworld partner itineraries returned by Cathay by default. Turn on **Exclude Oneworld Partners** for Cathay-only results. Circular airline icons, including Hawaiian, identify each distinct carrier on mixed itineraries, with a generic Oneworld fallback where needed.
+Version 0.5.4 includes Oneworld partner itineraries returned by Cathay by default. Turn on **Exclude Oneworld Partners** for Cathay-only results. Circular airline icons, including Hawaiian, identify each distinct carrier on mixed itineraries, with a generic Oneworld fallback where needed.
 
 ## Update
 
@@ -28,7 +28,13 @@ Cathay website changes, session expiry and limits can interrupt searches. Unchec
 
 Not affiliated with Cathay Pacific or Asia Miles. [MIT License](LICENSE). This repository hosts the public website, JSON version policy and release assets.
 
-## New in v0.5.3
+## New in v0.5.4
+
+- Keep the swap button aligned with the first airport row.
+- Keep the × icon at the same position in empty and selected airport fields.
+- Choose dates from a calendar that only offers the current year and next year. Past dates and dates outside the full search range’s booking window are disabled.
+
+## Included from v0.5.3
 
 - Search one date, or compare up to four routes using two airports per field.
 - One-day route cards and a combined seven-day calendar keep results grouped by route.

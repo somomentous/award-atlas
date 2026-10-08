@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.4 — 2026-10-08
+
+- Replace the native start-date popup with a calendar that only offers the current year and next year, and disables dates outside the selected range’s booking window.
+
+- Keep the airport remove/cancel icon centered at the same position in empty inputs and selected airport chips.
+- Center the airport-swap button on the first airport row, regardless of extra airports or Add airport controls.
+- Match the center grid column to the button width so both horizontal gaps are even.
+
 ## 0.5.3 — 2026-10-08
 
 - Add consistent space above and below the partial-results notice so it clears route cards, the calendar and the legend.
