@@ -10,7 +10,7 @@ Download the release ZIP asset, not GitHub’s Source code archive. Extract it (
 
 Choose airports with city/country/name/IATA suggestions, then cabin, adults, and 7/14/30 days or a month. Keep the Cathay tab open. Save Search stores named configurations for later use; Saved Searches lets you run, rename, edit or delete them.
 
-Version 0.4.3 includes Oneworld partner itineraries returned by Cathay by default. Turn on **Exclude Oneworld partners** for Cathay-only results. Circular airline icons, including Hawaiian, identify each distinct carrier on mixed itineraries, with a generic Oneworld fallback where needed.
+Version 0.4.4 includes Oneworld partner itineraries returned by Cathay by default. Turn on **Exclude Oneworld partners** for Cathay-only results. Circular airline icons, including Hawaiian, identify each distinct carrier on mixed itineraries, with a generic Oneworld fallback where needed.
 
 ## Update
 
@@ -28,4 +28,6 @@ Cathay website changes, session expiry and limits can interrupt searches. Unchec
 
 Not affiliated with Cathay Pacific or Asia Miles. [MIT License](LICENSE). This repository hosts the public website, JSON version policy and release assets.
 
-Version 0.4.3 also fixes the unfamiliar-seat-status error for unavailable partner flights and removes wrapping airport captions beneath From/To.
+Version 0.4.4 also fixes the unfamiliar-seat-status error for unavailable partner flights and removes wrapping airport captions beneath From/To.
+
+Version 0.4.4 supports the Heathrow/Gatwick airport changes displayed in Cathay's British Airways itineraries. Results flag the airport change and still require enough award seats on every leg.
