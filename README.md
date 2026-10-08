@@ -25,7 +25,3 @@ Cathay website changes, session expiry and limits can interrupt searches. Unchec
 **Non-Affiliated Tool · Always confirm miles & taxes on Cathay Pacific**
 
 Not affiliated with Cathay Pacific or Asia Miles. [MIT License](LICENSE). This repository hosts the public website, JSON version policy and release assets.
-
-## Download statistics
-
-The website displays GitHub’s aggregate release-asset download counts: all Award Atlas ZIPs across releases, and the latest version’s ZIPs. This includes downloads from any link and repeat downloads; it does not measure unique users, successful installs, website visitors or button clicks. Counts can lag and depend on GitHub API availability/rate limits. No analytics account, cookies, credentials or paid service is needed.
