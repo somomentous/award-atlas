@@ -2,7 +2,7 @@
 
 A free Chrome extension that searches Cathay Pacific award-seat availability in a compact panel on Cathay’s website.
 
-**[Visit the website](https://nathantia.github.io/award-atlas/)** · **[Download Award Atlas ZIP](https://github.com/nathantia/award-atlas/releases/latest/download/Award-Atlas.zip)** · [Release notes](https://github.com/nathantia/award-atlas/releases)
+**[Visit the website](https://somomentous.github.io/award-atlas/)** · **[Download Award Atlas ZIP](https://github.com/somomentous/award-atlas/releases/latest/download/Award-Atlas.zip)** · [Release notes](https://github.com/somomentous/award-atlas/releases)
 
 Current version: **0.3.3**. The Chrome Web Store submission is pending review. The ZIP is available now for manual installation.
 
@@ -27,7 +27,7 @@ Reloading alone does not download new files. Once available, Chrome Web Store in
 
 Search requests go directly from your browser to Cathay. Search progress and normalized results stay in browser session storage. No extension analytics or developer-operated search backend is used. Sign in directly on Cathay; the extension does not ask for your password or book flights.
 
-- [Privacy policy](https://nathantia.github.io/award-atlas/privacy.html)
+- [Privacy policy](https://somomentous.github.io/award-atlas/privacy.html)
 - [Support guide](https://award-atlas-info.nate-cb0.workers.dev/support)
 - Email: [ntia78@gmail.com](mailto:ntia78@gmail.com)
 
