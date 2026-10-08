@@ -10,6 +10,8 @@ Download the release ZIP asset, not GitHub’s Source code archive. Extract it (
 
 Choose airports with city/country/name/IATA suggestions, then cabin, adults, and 7/14/30 days or a month. Keep the Cathay tab open. Save Search stores named configurations for later use; Saved Searches lets you run, rename, edit or delete them.
 
+Version 0.4.2 includes Oneworld partner itineraries returned by Cathay by default. Turn on **Exclude Oneworld partners** for Cathay-only results. Circular airline icons, including Hawaiian, identify each distinct carrier on mixed itineraries, with a generic Oneworld fallback where needed.
+
 ## Update
 
 Settings > Check for Updates checks GitHub releases. Update Now opens the release page; it does not install a ZIP automatically. Stop your search, download/extract the latest ZIP, replace files in the **same installed folder**, click Reload on Award Atlas’s card, and refresh Cathay. Do not remove the extension or load a new folder.
