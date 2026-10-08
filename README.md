@@ -8,9 +8,9 @@ A free Chrome extension for searching Cathay Pacific award seats in a compact pa
 
 Download the release ZIP asset, not GitHub’s Source code archive. Extract it (double-click on Mac; Extract All on Windows), keep the `award-atlas-extension` folder in a permanent location, then open `chrome://extensions` in desktop Chrome 120+. Enable Developer mode, click Load unpacked, and select the folder containing `manifest.json`. Pin Award Atlas, sign in directly on Cathay, refresh that tab, and click the extension icon.
 
-Choose airports with city/country/name/IATA suggestions, then cabin, adults, and 7/14/30 days or a month. Keep the Cathay tab open. Save Search stores named configurations for later use; Saved Searches lets you run, rename, edit or delete them.
+Choose airports with city/country/name/IATA suggestions, then cabin, adults, and 1/7/14/30 days or a month for a single route. Select up to two airports per field to compare routes over 1 or 7 days (at most 28 route/date checks). Keep the Cathay tab open. Save Search stores named configurations for later use; Saved Searches lets you run, rename, edit or delete them.
 
-Version 0.4.4 includes Oneworld partner itineraries returned by Cathay by default. Turn on **Exclude Oneworld partners** for Cathay-only results. Circular airline icons, including Hawaiian, identify each distinct carrier on mixed itineraries, with a generic Oneworld fallback where needed.
+Version 0.5.3 includes Oneworld partner itineraries returned by Cathay by default. Turn on **Exclude Oneworld Partners** for Cathay-only results. Circular airline icons, including Hawaiian, identify each distinct carrier on mixed itineraries, with a generic Oneworld fallback where needed.
 
 ## Update
 
@@ -28,6 +28,13 @@ Cathay website changes, session expiry and limits can interrupt searches. Unchec
 
 Not affiliated with Cathay Pacific or Asia Miles. [MIT License](LICENSE). This repository hosts the public website, JSON version policy and release assets.
 
-Version 0.4.4 also fixes the unfamiliar-seat-status error for unavailable partner flights and removes wrapping airport captions beneath From/To.
+## New in v0.5.3
 
-Version 0.4.4 supports the Heathrow/Gatwick airport changes displayed in Cathay's British Airways itineraries. Results flag the airport change and still require enough award seats on every leg.
+- Search one date, or compare up to four routes using two airports per field.
+- One-day route cards and a combined seven-day calendar keep results grouped by route.
+- Green with one diamond means a matching all-CX itinerary is available; blue with two diamonds means only Oneworld or mixed options were found.
+- Confirmed Cathay 9100 no-flight responses are normal empty results, including redirects to the redemption form.
+- Skip eligible date errors and retry them later. Skipped dates are light red; unfinished checks remain unknown.
+- Improved partial-results notices and spacing.
+
+Earlier fixes for unavailable partner seat statuses and supported Heathrow/Gatwick airport changes are included. Always review connection and airport-change details with Cathay.
