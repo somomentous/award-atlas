@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.6.0 — 2026-10-08
+
+- Select multiple cabin classes, with mutually exclusive All Cabins and consistent title case. Saved searches and restored searches retain the selected cabins.
+- Sort matching itineraries by departure, arrival, total travel time, stops, or cabin class in either direction. Unknown values stay last.
+- Display all matching cabins per itinerary, total travel time from Cathay, and arrival calendar-day offsets such as +1 and +2. Multi-cabin selections do not add date checks or duplicate calendar counts.
+- Retain the existing green/blue calendar rule and omit mileage sorting because mileage prices are not captured.
+
 ## 0.5.4 — 2026-10-08
 
 - Replace the native start-date popup with a calendar that only offers the current year and next year, and disables dates outside the selected range’s booking window.
