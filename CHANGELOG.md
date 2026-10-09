@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.6.3 — 2026-10-09
+
+- Require explicit agreement before the first search, including saved and resumed searches. Keep acceptance locally and ask again when the terms text changes.
+- Detect an older extension background worker before accepting terms and provide clear extension Reload / Cathay refresh instructions instead of an unsupported-action error.
+- Identify the publisher as SOMOMENTOUS LLC in the agreement, disclaimer and privacy policy. Move the concise disclaimer below the action button and remove the two search helper lines.
+- Add a visible use-at-your-own-risk notice and an offline use & liability disclaimer in the panel. Include the same full notice in the ZIP and download website, covering provider terms, account/access restrictions, warranty/liability limits and non-waivable rights.
+
 ## 0.6.2 — 2026-10-08
 
 - Start multi-cabin searches using the same Cathay booking request as All Cabins, then filter to the selected cabins. This avoids a Premium Economy session limiting Premium Economy + Business results.

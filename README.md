@@ -4,13 +4,19 @@ A free Chrome extension for searching Cathay Pacific award seats in a compact pa
 
 [Website](https://somomentous.github.io/award-atlas/) · [Download ZIP](https://github.com/somomentous/award-atlas/releases/latest/download/Award-Atlas.zip) · [Release notes](https://github.com/somomentous/award-atlas/releases)
 
+## Use and liability
+
+Use at your own risk. Cathay may block the tool or restrict accounts. You are responsible for following its terms. Read the [use & liability disclaimer](https://somomentous.github.io/award-atlas/disclaimer.html) before using Award Atlas; a copy is included in the ZIP. The notice does not override Cathay’s terms or waive rights that cannot legally be waived.
+
 ## Install
 
 Download the release ZIP asset, not GitHub’s Source code archive. Extract it (double-click on Mac; Extract All on Windows), keep the `award-atlas-extension` folder in a permanent location, then open `chrome://extensions` in desktop Chrome 120+. Enable Developer mode, click Load unpacked, and select the folder containing `manifest.json`. Pin Award Atlas, sign in directly on Cathay, refresh that tab, and click the extension icon.
 
+Before your first search, open **Terms of Use Agreement**, review the terms from **SOMOMENTOUS LLC**, check the agreement box, and select **Agree and return to search**. Acceptance is kept locally; changed terms require agreement again.
+
 Choose airports with city/country/name/IATA suggestions, then cabin, adults, and 1/7/14/30 days or a month for a single route. Select up to two airports per field to compare routes over 1 or 7 days (at most 28 route/date checks). Keep the Cathay tab open. Save Search stores named configurations for later use; Saved Searches lets you run, rename, edit or delete them.
 
-Version 0.6.2 includes Oneworld partner itineraries returned by Cathay by default. Turn on **Exclude Oneworld Partners** for Cathay-only results. Circular airline icons, including Hawaiian, identify each distinct carrier on mixed itineraries, with a generic Oneworld fallback where needed.
+Version 0.6.3 includes Oneworld partner itineraries returned by Cathay by default. Turn on **Exclude Oneworld Partners** for Cathay-only results. Circular airline icons, including Hawaiian, identify each distinct carrier on mixed itineraries, with a generic Oneworld fallback where needed.
 
 ## Update
 
@@ -28,7 +34,14 @@ Cathay website changes, session expiry and limits can interrupt searches. Unchec
 
 Not affiliated with Cathay Pacific or Asia Miles. [MIT License](LICENSE). This repository hosts the public website, JSON version policy and release assets.
 
-## New in v0.6.2
+## New in v0.6.3
+
+- Review and explicitly agree to the Terms of Use Agreement before searching, including saved searches and resumed searches.
+- Keep acceptance in this browser and require agreement again when the terms text changes.
+- Include the full agreement from SOMOMENTOUS LLC in the panel, ZIP and website, with updated privacy information.
+- Show clear extension Reload and Cathay refresh instructions if the panel is paired with older background code.
+
+## Included from v0.6.2
 
 - Fix missing Business results when Premium Economy + Business are selected together, without extra date checks.
 - Start every new search with Departure Time / Earliest First. Changing the sort for existing results still persists through reloads.

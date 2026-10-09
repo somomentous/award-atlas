@@ -17,7 +17,7 @@ jobs:
       - name: Prepare public website files
         run: |
           mkdir _site
-          cp index.html privacy.html style.css version-policy.json .nojekyll _site/
+          cp index.html privacy.html disclaimer.html style.css version-policy.json .nojekyll _site/
           cp -R assets _site/assets
       - uses: actions/upload-pages-artifact@v4
         with:
