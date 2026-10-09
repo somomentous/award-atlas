@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.1 — 2026-10-08
+
+- Limit Month searches to one departure airport and one arrival airport, including when switching modes during an unfinished airport lookup.
+- Refresh both airport controls when changing date modes. Date range retains two airports per field for 1-day or 7-day searches, and Month stays unavailable while either field has multiple airports.
+
 ## 0.6.0 — 2026-10-08
 
 - Select multiple cabin classes, with mutually exclusive All Cabins and consistent title case. Saved searches and restored searches retain the selected cabins.
