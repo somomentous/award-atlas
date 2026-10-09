@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.2 — 2026-10-08
+
+- Start multi-cabin searches using the same Cathay booking request as All Cabins, then filter to the selected cabins. This avoids a Premium Economy session limiting Premium Economy + Business results.
+- Default every new search to Departure Time / Earliest First. Sorting an existing result or restoring it after a reload retains the chosen order.
+
 ## 0.6.1 — 2026-10-08
 
 - Limit Month searches to one departure airport and one arrival airport, including when switching modes during an unfinished airport lookup.
